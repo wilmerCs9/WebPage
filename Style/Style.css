@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+h3{
+    color: #fff;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.contenedorH{
+    height: 70vh;
+    background:linear-gradient(to left, rgba(5, 0, 0, 0), #151515),url(../Imagens/OwlStore-Nov21-Lifestyle-136.jpg)center;  
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    align-items:center;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0,.2);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+}
+.icon{
+    display: flex;
+    justify-content: end;
+}
+
+.icon-cart{
+    width: 40px;
+    height: 40px;
+    
+}
+.info{
+    height: 120px;
+    padding: 30px 300px;
+    display: flex;
+    font-family: 'Sen', sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+   
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    padding: 0 40px;
+    
+}
+.nav .logo{
+    height: 80px;
+}
+.nav .logo img{
+    height: 100%;
+}
+.nav .enlaces_header a{
+    color: #5d6678;
+    text-decoration: none;
+    margin-left:20px;
+}
+
+.nav .icon-cart{
+    padding: 5px;
+}
+
+.contenido_header{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#foto_perfil{
+    height: 300px;
+    width: 300px;
+}
+#logotipo{
+    height: 70px;
+    width: 70px;
+}
+
+
+.container-items{ 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    
+}
+.item{
+    border-radius: 10px;
+}
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0,0.2);
+}
+.info-product{
+    padding: 15px 30px;
+}
+.item img{
+    width: 100%;
+    height:300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+
+}
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button{
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.container-section{
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    
+}
+.section img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    align-items: center;
+}
+
+/* fotter */
+
+.contenedor_footer {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.footer{
+    background-color: #151515;
+    padding: 80px 0;
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.social-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+
+}
